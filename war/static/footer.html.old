@@ -1,0 +1,30 @@
+
+<div id="footer">
+<div id="tab-container" align="center"><br />
+<div id="tabs">
+<ul id="list">
+   <li>¿Qué es esto?</li>
+   <li>Contactar</li>
+   <li>Condiciones de uso</li>
+   <li>Licencias</li>
+</ul>
+</div>
+<br />
+<div id="tabs">
+<ul id="list">
+   <li><img src="img/rss.png"
+      / style="vertical-align: middle; padding-right: 15px;"
+   />Portada</li>
+   <li>Pendientes</li>
+   <li>Comentarios<img src="img/rss.png"
+      / style="vertical-align: middle; padding-left: 15px;"
+   /></li>
+</ul>
+</div>
+<br />
+<span align="center" style="text-align: center"><img
+   src="http://code.google.com/appengine/images/appengine-noborder-120x30.gif"
+   alt="Con la tecnología de Google App Engine"
+/></span></div>
+</div>
+</div>

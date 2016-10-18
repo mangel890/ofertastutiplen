@@ -1,0 +1,179 @@
+<web-app>
+
+   <!-- Servlets -->
+   <servlet>
+      <servlet-name>submitOffer</servlet-name>
+      <servlet-class>com.ofertastutiplen.SubmitOffer</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>submitOffer</servlet-name>
+      <url-pattern>/submitOffer</url-pattern>
+   </servlet-mapping>
+   <servlet>
+      <servlet-name>signUser</servlet-name>
+      <servlet-class>com.ofertastutiplen.SignUser</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>signUser</servlet-name>
+      <url-pattern>/signUser</url-pattern>
+   </servlet-mapping>
+   <servlet>
+      <servlet-name>logIn</servlet-name>
+      <servlet-class>com.ofertastutiplen.LogIn</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>logIn</servlet-name>
+      <url-pattern>/logIn</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>logOut</servlet-name>
+      <servlet-class>com.ofertastutiplen.LogOut</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>logOut</servlet-name>
+      <url-pattern>/logOut</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>imageServer</servlet-name>
+      <servlet-class>com.ofertastutiplen.ImageServer</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>imageServer</servlet-name>
+      <url-pattern>/imageServer</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>asyncCall</servlet-name>
+      <servlet-class>com.ofertastutiplen.async.AsyncCall</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>asyncCall</servlet-name>
+      <url-pattern>/asyncCall</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>validateAccount</servlet-name>
+      <servlet-class>com.ofertastutiplen.ValidateAccount</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>validateAccount</servlet-name>
+      <url-pattern>/validateAccount</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>modifyUser</servlet-name>
+      <servlet-class>com.ofertastutiplen.ModifyUser</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>modifyUser</servlet-name>
+      <url-pattern>/modifyUser</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>rss</servlet-name>
+      <servlet-class>com.ofertastutiplen.Rss</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>rss</servlet-name>
+      <url-pattern>/rss</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>sendComment</servlet-name>
+      <servlet-class>com.ofertastutiplen.SendComment</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>sendComment</servlet-name>
+      <url-pattern>/sendComment</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>approveOffer</servlet-name>
+      <servlet-class>com.ofertastutiplen.ApproveOffer</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>approveOffer</servlet-name>
+      <url-pattern>/approveOffer</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>UrlRewrite</servlet-name>
+      <servlet-class>com.ofertastutiplen.UrlRewrite</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>UrlRewrite</servlet-name>
+      <url-pattern>/offer/*</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>UpdateDatabase</servlet-name>
+      <servlet-class>com.ofertastutiplen.UpdateDatabase</servlet-class>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>UpdateDatabase</servlet-name>
+      <url-pattern>/ud</url-pattern>
+   </servlet-mapping>
+
+
+
+
+   <!-- Default page to serve -->
+   <welcome-file-list>
+      <welcome-file>index.jsp</welcome-file>
+   </welcome-file-list>
+
+<!--OnPositive Tools-->
+<servlet>
+		<servlet-name>baseViewerServlet</servlet-name>
+		<servlet-class>com.onpositive.gae.tools.servlets.BaseViewerServlet
+		</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>baseViewerServlet</servlet-name>
+		<url-pattern>/appwrench/baseviewer</url-pattern>
+	</servlet-mapping>
+<servlet>
+		<servlet-name>SessionAuth</servlet-name>
+		<servlet-class>com.onpositive.auth.AuthServlet</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>SessionAuth</servlet-name>
+		<url-pattern>/appwrench/auth</url-pattern>
+	</servlet-mapping>
+<servlet>
+		<servlet-name>QueueHandler</servlet-name>
+		<servlet-class>com.onpositive.gae.tools.servlets.QueueHandlerServlet
+		</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>QueueHandler</servlet-name>
+		<url-pattern>/appwrench/queuehandler</url-pattern>
+	</servlet-mapping>
+<security-constraint>
+		<web-resource-collection>
+			<url-pattern>/appwrench/queuehandler</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+<servlet>
+		<servlet-name>profilerConsoleServlet</servlet-name>
+		<servlet-class>com.onpositive.gae.tools.servlets.ConsoleServlet
+		</servlet-class>
+	</servlet>
+<servlet-mapping>
+		<servlet-name>profilerConsoleServlet</servlet-name>
+		<url-pattern>/appwrench/console</url-pattern>
+	</servlet-mapping>
+<servlet>
+<servlet-name>SessionAuth</servlet-name>
+<servlet-class>com.onpositive.auth.AuthServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>SessionAuth</servlet-name>
+<url-pattern>/appwrench/auth</url-pattern>
+</servlet-mapping>
+</web-app>

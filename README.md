@@ -1,2 +1,2 @@
 # ofertastutiplen
-Repository for Ofertas Tutiplen site (Google's AppEngine based)
+Repository for Ofertas Tutiplen site (Google's AppEngine compliant)

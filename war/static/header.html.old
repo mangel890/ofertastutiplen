@@ -1,0 +1,21 @@
+
+<div id="header" >
+{%userControl%}
+
+<div id="logo" style="text-align:center"><img src="img/logo.png" /></div>
+
+
+
+<div id="tab-containter" align="center">
+<div id="tabs">
+<ul id="list">
+   <li {%$1%}><a href="index.jsp">Inicio</a></li>
+   <li {%$2%}><a href="submitOffer.jsp">Enviar Oferta</a></li>
+   <li {%$3%}><a href="pending.jsp">Pendientes</a></li>
+   <li {%$4%}><a href="activity.jsp">Actividad</a></li>
+   <li {%$4%}><a href="signUser.jsp">Test</a></li>
+   <li {%$5%}><a href="http://ofertastutiplen.blogspot.com">El Blog</a></li>
+</ul>
+</div>
+</div>
+</div>

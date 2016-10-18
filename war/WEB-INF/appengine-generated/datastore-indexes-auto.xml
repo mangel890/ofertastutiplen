@@ -1,0 +1,23 @@
+<!-- Indices written at Tue, 12 Jul 2011 23:03:53 UTC -->
+
+<datastore-indexes>
+
+    <!-- Used 2 times in query history -->
+    <datastore-index kind="Offer" ancestor="false" source="auto">
+        <property name="statusM" direction="asc"/>
+        <property name="publishedDateM" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 52 times in query history -->
+    <datastore-index kind="Vote" ancestor="false" source="auto">
+        <property name="offer" direction="asc"/>
+        <property name="value" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 2 times in query history -->
+    <datastore-index kind="Offer" ancestor="false" source="auto">
+        <property name="statusM" direction="asc"/>
+        <property name="submittedDateM" direction="desc"/>
+    </datastore-index>
+
+</datastore-indexes>
